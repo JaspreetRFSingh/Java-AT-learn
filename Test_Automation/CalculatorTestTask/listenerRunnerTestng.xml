@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test_calculator">
+	<listeners>
+		<listener class-name="com.jstech.calculatortestatsk.TestListenerImpl" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.jstech.calculatortestatsk.TestCalculator" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- test_calculator -->

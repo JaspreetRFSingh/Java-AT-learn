@@ -1,0 +1,515 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 04 12:03:59 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (110 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.negativeTestAddition()'><b>negativeTestAddition</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td><div><pre>java.lang.AssertionError: expected [46.0] but found [46.1]
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestAddition(TestCalculator.java:147)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2116908859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2116908859'><pre>java.lang.AssertionError: expected [46.0] but found [46.1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestAddition(TestCalculator.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.negativeTestDivide()'><b>negativeTestDivide</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td><div><pre>java.lang.AssertionError: expected [1.0] but found [1.0043478260869565]
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestDivide(TestCalculator.java:133)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace813656972", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace813656972'><pre>java.lang.AssertionError: expected [1.0] but found [1.0043478260869565]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestDivide(TestCalculator.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.negativeTestDivideByZero()'><b>negativeTestDivideByZero</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 21, 0</td>
+<td><div><pre>org.testng.TestException: 
+Expected exception of type class java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
+Caused by: java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestDivideByZero(TestCalculator.java:173)
+	... 19 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373810119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373810119'><pre>org.testng.TestException: 
+Expected exception of type class java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
+	at org.testng.internal.ExpectedExceptionsHolder.wrongException(ExpectedExceptionsHolder.java:68)
+	at org.testng.internal.Invoker.considerExceptions(Invoker.java:1130)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:615)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestDivideByZero(TestCalculator.java:173)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	... 19 more
+</pre></div></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.negativeTestMultiply()'><b>negativeTestMultiply</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td><div><pre>java.lang.AssertionError: expected [1.0] but found [531.0]
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestMultiply(TestCalculator.java:140)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace592688102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace592688102'><pre>java.lang.AssertionError: expected [1.0] but found [531.0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestMultiply(TestCalculator.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.negativeTestSubtract()'><b>negativeTestSubtract</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td><div><pre>java.lang.AssertionError: expected [0.0] but found [0.10000000000000142]
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestSubtract(TestCalculator.java:154)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1123629720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1123629720'><pre>java.lang.AssertionError: expected [0.0] but found [0.10000000000000142]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.jstech.calculatortestatsk.TestCalculator.negativeTestSubtract(TestCalculator.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.additionChecker()'><b>additionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 2, 3, 5</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.additionChecker()'><b>additionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 6, 7, 13</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.additionChecker()'><b>additionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 19, 1, 20</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.additionChecker()'><b>additionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 22, 0, 22</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.additionChecker()'><b>additionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: -23, 23, 0</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.divisionChecker()'><b>divisionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 3, 3, 1</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.divisionChecker()'><b>divisionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 16, 8, 2</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.divisionChecker()'><b>divisionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 19, 1, 19</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.divisionChecker()'><b>divisionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 0, 22, 0</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.divisionChecker()'><b>divisionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: -23, 23, -1</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.multiplicationChecker()'><b>multiplicationChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 2, 3, 6</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.multiplicationChecker()'><b>multiplicationChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 6, 7, 42</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.multiplicationChecker()'><b>multiplicationChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 19, -1, -19</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.multiplicationChecker()'><b>multiplicationChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 22, 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.multiplicationChecker()'><b>multiplicationChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: -13, 13, -169</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.subtractionChecker()'><b>subtractionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 2, 3, -1</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.subtractionChecker()'><b>subtractionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 16, 7, 9</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.subtractionChecker()'><b>subtractionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 19, 1, 18</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.subtractionChecker()'><b>subtractionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 22, 0, 22</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.subtractionChecker()'><b>subtractionChecker</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: -23, 23, -46</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testAddition()'><b>testAddition</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testAdditionIdentity()'><b>testAdditionIdentity</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testAdditionNegative()'><b>testAdditionNegative</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testDivide()'><b>testDivide</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testDivideByZero()'><b>testDivideByZero</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator<br>Parameters: 21, 0</td>
+<td><div><pre>java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at com.jstech.calculatortestatsk.TestCalculator.testDivideByZero(TestCalculator.java:166)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace495792375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace495792375'><pre>java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at com.jstech.calculatortestatsk.TestCalculator.testDivideByZero(TestCalculator.java:166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testDivideNegativeDenominator()'><b>testDivideNegativeDenominator</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testDivideNegativeNumerator()'><b>testDivideNegativeNumerator</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testMultiplyIdentity()'><b>testMultiplyIdentity</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testMultiplyTwo()'><b>testMultiplyTwo</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testMultiplyTwoNegatives()'><b>testMultiplyTwoNegatives</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testMultiplyWithZero()'><b>testMultiplyWithZero</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testNegativeInteger()'><b>testNegativeInteger</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testNegativeIntegerP()'><b>testNegativeIntegerP</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testPositiveInteger()'><b>testPositiveInteger</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testPositiveIntegerN()'><b>testPositiveIntegerN</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testSubtraction()'><b>testSubtraction</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testSubtractionBothNegative()'><b>testSubtractionBothNegative</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+<tr>
+<td title='com.jstech.calculatortestatsk.TestCalculator.testSubtractionNegative()'><b>testSubtractionNegative</b><br>Test class: com.jstech.calculatortestatsk.TestCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.jstech.calculatortestatsk.TestCalculator@1e397ed7</td></tr>
+</table><p>
+</body>
+</html>

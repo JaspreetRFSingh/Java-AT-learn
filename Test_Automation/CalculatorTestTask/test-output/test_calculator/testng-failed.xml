@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [test_calculator]">
+  <listeners>
+    <listener class-name="com.jstech.calculatortestatsk.TestListenerImpl"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.jstech.calculatortestatsk.TestCalculator">
+        <methods>
+          <include name="negativeTestDivideByZero" invocation-numbers="0"/>
+          <include name="negativeTestMultiply"/>
+          <include name="negativeTestAddition"/>
+          <include name="negativeTestDivide"/>
+          <include name="negativeTestSubtract"/>
+        </methods>
+      </class> <!-- com.jstech.calculatortestatsk.TestCalculator -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [test_calculator] -->
